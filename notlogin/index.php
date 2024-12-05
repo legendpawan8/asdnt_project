@@ -20,7 +20,7 @@
                     We specialize in cutting-edge solutions for web, mobile, and cloud platforms. Let's build the future together.
                 </p>
                 <div class="mt-8">
-                    <a href="services.php" class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">
+                    <a href="services.php" class="bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 px-6 py-3 rounded-full font-semibold hover:from-yellow-300 hover:to-orange-400 transition">
                         Explore Services
                     </a>
                     <a href="contact.php" class="ml-4 border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition">
@@ -29,10 +29,27 @@
                 </div>
             </div>
             <!-- Hero Image -->
-            <div class="flex-1 mt-10 md:mt-0">
+            <div class="flex-1 mt-5 md:mt-0">
                 <img src="../images/hero-image.png" alt="Hero Image" class="w-full h-auto">
             </div>
         </div>
+        
+        <!-- Modal Overlay -->
+        <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" id="modal-overlay">
+            <div class="bg-gray-800 text-white p-8 rounded-lg shadow-lg max-w-lg w-full text-center">
+                <h2 class="text-3xl font-bold mb-4">Limited Time Offer!</h2>
+                <p class="mb-6 text-lg">Unlock amazing discounts and exclusive features for your business. Don't miss out!</p>
+                <div class="flex justify-center gap-4">
+                    <a href="services.php" class="bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 px-6 py-3 rounded-full font-semibold hover:from-yellow-300 hover:to-orange-400 transition">
+                        Explore Now
+                    </a>
+                    <button class="border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition" id="close-modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+        
         <!-- Decorative Wave -->
         <div class="absolute bottom-0 left-0 right-0">
             <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
@@ -40,5 +57,21 @@
             </svg>
         </div>
     </header>
+
+    <script>
+        // JavaScript to handle modal visibility
+        const modalOverlay = document.getElementById('modal-overlay');
+        const closeModal = document.getElementById('close-modal');
+
+        // To show the modal (You can trigger this based on your condition)
+        setTimeout(() => {
+            modalOverlay.style.display = 'flex';
+        }, 1000);  // Show modal after 1 second, you can adjust as needed
+
+        // To close the modal
+        closeModal.addEventListener('click', () => {
+            modalOverlay.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
