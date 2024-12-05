@@ -3,96 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index Page</title>
+    <title>Hero Section</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom styles to make carousel full-screen */
-        .carousel-wrapper {
-            width: 100vw; /* Full width of the viewport */
-            height: 100vh; /* Full height of the viewport */
-            margin-left: 2cm; /* Left margin of 2cm */
-            margin-right: 2cm; /* Right margin of 2cm */
-        }
-
-        /* Ensure carousel slides take full width and height */
-        .carousel-slide {
-            height: 100vh; /* Full height of the viewport */
-            width: 100vw; /* Full width of the viewport */
-        }
-    </style>
 </head>
 <body>
-    <!-- Include Navbar -->
     <?php include '../common/navbar.php'; ?>
-
-    <!-- Carousel Container -->
-    <div class="flex items-center justify-center mt-2">
-        <!-- Carousel Wrapper with Gradient -->
-        <div class="relative carousel-wrapper bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 rounded-lg p-8">
-            <!-- Carousel Slides -->
-            <div class="carousel-container relative overflow-hidden">
-                <div class="carousel-slides flex transition-transform duration-500 ease-in-out" id="carouselSlides">
-                    <!-- Slide 1 -->
-                    <div class="carousel-slide flex-none bg-cover bg-center rounded-lg" style="background-image: url('');">
-                        <div class="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold"></div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="carousel-slide flex-none bg-cover bg-center rounded-lg" style="background-image: url('');">
-                        <div class="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold"></div>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="carousel-slide flex-none bg-cover bg-center rounded-lg" style="background-image: url('');">
-                        <div class="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold"></div>
-                    </div>
+    <!-- Hero Section -->
+    <header class="relative bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 text-white min-h-screen flex items-center">
+        <div class="container mx-auto px-6 lg:px-20 flex flex-col md:flex-row items-center justify-center">
+            <!-- Hero Content -->
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+                    Empowering Businesses with <span class="text-yellow-400">Innovative Software</span>
+                </h1>
+                <p class="mt-6 text-lg text-gray-200">
+                    We specialize in cutting-edge solutions for web, mobile, and cloud platforms. Let's build the future together.
+                </p>
+                <div class="mt-8">
+                    <a href="services.php" class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">
+                        Explore Services
+                    </a>
+                    <a href="contact.php" class="ml-4 border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition">
+                        Contact Us
+                    </a>
                 </div>
-
-                <!-- Carousel Controls -->
-                <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full">
-                    &lt;
-                </button>
-                <button id="next" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full">
-                    &gt;
-                </button>
+            </div>
+            <!-- Hero Image -->
+            <div class="flex-1 mt-10 md:mt-0">
+                <img src="../images/hero-image.png" alt="Hero Image" class="w-full h-auto">
             </div>
         </div>
-    </div>
-
-    <script>
-        const carouselSlides = document.getElementById('carouselSlides');
-        const nextBtn = document.getElementById('next');
-        const prevBtn = document.getElementById('prev');
-        let currentIndex = 0;
-
-        const totalSlides = document.querySelectorAll('.carousel-slide').length;
-
-        nextBtn.addEventListener('click', () => {
-            if (currentIndex < totalSlides - 1) {
-                currentIndex++;
-            } else {
-                currentIndex = 0; // Loop back to the first slide
-            }
-            updateCarousel();
-        });
-
-        prevBtn.addEventListener('click', () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-            } else {
-                currentIndex = totalSlides - 1; // Loop back to the last slide
-            }
-            updateCarousel();
-        });
-
-        function updateCarousel() {
-            const offset = -currentIndex * 100; // Move the slides by 100% for each index
-            carouselSlides.style.transform = `translateX(${offset}%)`;
-        }
-
-        // Optionally, add auto-slide functionality
-        setInterval(() => {
-            nextBtn.click();
-        }, 5000); // Change slide every 5 seconds
-    </script>
-
+        <!-- Decorative Wave -->
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#ffffff" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,176C384,171,480,149,576,160C672,171,768,213,864,202.7C960,192,1056,128,1152,96C1248,64,1344,64,1392,64L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </header>
 </body>
 </html>
