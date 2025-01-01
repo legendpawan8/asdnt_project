@@ -10,7 +10,7 @@
 <header class="relative min-h-screen bg-cover bg-center flex items-start text-white" 
         style="background-image: url('../images/hero-background.jpg'); background-repeat: no-repeat; background-size: cover;">
     <!-- Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-b from-purple-800 via-purple-600 to-purple-400 opacity-75"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-blue-500 via-blue-600 to-blue-400 opacity-80"></div>
 
     <!-- Hero Content -->
     <div class="relative w-full flex min-h-screen items-start">
@@ -43,7 +43,7 @@
 <!-- Decorative Wave -->
 <div class="absolute bottom-0 left-0 right-0">
     <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
-        <path fill="#7c3aed" fill-opacity="1" 
+        <path fill=" #3B82F6" fill-opacity="1" 
               d="M0,160L48,165.3C96,171,192,181,288,176C384,171,480,149,576,160C672,171,768,213,864,202.7C960,192,1056,128,1152,96C1248,64,1344,64,1392,64L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
     </svg>
 </div>

@@ -9,7 +9,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<header class="bg-gradient-to-r from-purple-800 via-purple-700 to-purple-600 shadow-lg text-white">
+<header class="bg-blue-500  shadow-lg text-white">
     <div class="container mx-auto flex items-center justify-between py-5 px-2">
         <!-- Logo (Image + Text) -->
         <div class="relative">
@@ -17,7 +17,7 @@
                 <!-- Logo -->
                 <img src="../images/l4.png" alt="YourLogo" class="h-10 w-100">
                 <!-- Text after the logo -->
-                <span class="ml-3 text-2xl font-bold text-white" style="font-family: 'Orbitron', sans-serif;">ASDNT</span>
+                <span class="ml-3 text-2xl font-bold text-white" style="font-family: 'Orbitron', sans-serif;">A S D N T</span>
             </a>
         </div>
 
