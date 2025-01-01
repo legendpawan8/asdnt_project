@@ -27,8 +27,8 @@
                     <a href="services.php" class="bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 px-6 py-3 rounded-full font-semibold hover:from-yellow-300 hover:to-orange-400 transition">
                         Explore Services
                     </a>
-                    <a href="contact.php" class="ml-4 border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition">
-                        Contact Us
+                    <a href="login_signup.php" class="ml-4 border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition">
+                        Join Now
                     </a>
                 </div>
             </div>

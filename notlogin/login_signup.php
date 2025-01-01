@@ -48,6 +48,8 @@ session_start();
     </style>
 </head>
 <body class="bg-gray-100">
+    
+<?php include '../common/navbar.php'; ?>
 
     <!-- Main Container with Image and Form -->
     <div class="flex justify-center items-center h-screen bg-gray-100">
@@ -55,11 +57,12 @@ session_start();
 
             <!-- Left side: Image -->
             <div class="w-1/2 hidden lg:block">
-                <img src="../images/2.jpg" alt="Login Image" class="w-full h-full object-cover rounded-l-lg">
+                <img src="../images/3.png" alt="Login Image" class="w-full h-full object-cover rounded-l-lg">
             </div>
 
             <!-- Right side: Form (Login / Sign Up) -->
-            <div class="w-full lg:w-1/2 p-8">
+            <div class="w-full lg:w-1/2 p-8 ">
+                
                 <!-- Login Form -->
                 <form id="loginForm" method="POST" action="login.php" class="space-y-6">
                     <h2 class="text-2xl font-bold text-center">Login</h2>
@@ -72,7 +75,7 @@ session_start();
                         <input type="password" name="password" id="password" class="w-full p-2 border border-gray-300 rounded-md" required>
                     </div>
                     <div class="mb-4">
-                        <label for="role" class="block text-gray-700 mb-2">Select Role</label>
+                        <label for="role" class="block text-gray-700 mb-2">Log in as:</label>
                         <div class="flex justify-around space-x-2">
                             <div id="companyRole" class="role-button">
                                 <i class="fas fa-building text-2xl"></i>
@@ -114,7 +117,7 @@ session_start();
                         <input type="password" name="password" id="password" class="w-full p-2 border border-gray-300 rounded-md" required>
                     </div>
                     <div class="mb-4">
-                        <label for="role" class="block text-gray-700 mb-2">Select Role</label>
+                        <label for="role" class="block text-gray-700 mb-2">Sign up as:</label>
                         <div class="flex justify-around space-x-2">
                             <div id="companyRoleSignup" class="role-button">
                                 <i class="fas fa-building text-2xl"></i>
