@@ -15,7 +15,7 @@
         <div class="relative">
             <a href="index.php" class="flex items-center">
                 <!-- Logo -->
-                <img src="../images/l4.png" alt="YourLogo" class="h-10 w-100">
+                <img src="./images/l4.png" alt="YourLogo" class="h-10 w-100">
                 <!-- Text after the logo -->
                 <span class="ml-3 text-2xl font-bold text-white" style="font-family: 'Orbitron', sans-serif;">A S D N T</span>
             </a>
