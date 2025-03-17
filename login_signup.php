@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
                         case 'new_registered':
                             header("Location: newregister/index.php");
                             exit();
-                        case 'company':
+                        case 'admin':
                             header("Location: company/index.php");
                             exit();
                         case 'teacher':
@@ -103,7 +103,7 @@ $conn->close();
             <?php endif; ?>
 
             <!-- Login Form -->
-            <form method="POST" action="" class="space-y-6">
+            <form id="loginForm" method="POST" action="" class="space-y-6">
                 <h2 class="text-2xl font-bold text-center">Login</h2>
                 <div>
                     <label for="login_email" class="block text-gray-700">Email</label>

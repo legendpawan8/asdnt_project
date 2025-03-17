@@ -12,8 +12,13 @@
     <!-- Hero Section -->
     <?php include 'common/herosection.php'; ?>
     
+    <?php include 'common/about.php'; ?>
+    
+    <?php include 'common/about2.php'; ?>
+    <?php include 'common/services.php'; ?>
+    <?php include 'common/tech.php'; ?>
 
-    <!-- We Are Hiring Section -->
+    <?php include 'common/footer.php'; ?>
 
 </body>
 </html>

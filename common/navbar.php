@@ -9,7 +9,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<header class="bg-blue-500  shadow-lg text-white">
+<header class="bg-blue-500/50 backdrop-blur-md shadow-lg text-white">
     <div class="container mx-auto flex items-center justify-between py-5 px-2">
         <!-- Logo (Image + Text) -->
         <div class="relative">
